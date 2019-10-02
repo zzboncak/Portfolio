@@ -1,3 +1,7 @@
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
 nav {
     height: 30px;
     background-color: black;
@@ -52,20 +56,24 @@ header {
     padding-left: 15px;
 }
 
-.project > * {
-    display: inline-block;
-    text-align: left;
+.project {
+    display: flex;
 }
 
 .image-left {
     width: 40%;
-    /*float: left;*/
+    flex-direction: left;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .image-right {
     width: 40%;
+    flex-direction: right;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.description {
+    text-align: left;
 }
