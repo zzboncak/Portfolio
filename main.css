@@ -3,12 +3,10 @@
 }
 
 nav {
-    height: 30px;
+    height: 40px;
     background-color: black;
     color: white;
-    margin: 10px;
-    width: 95%;
-    text-align: right;
+    text-align: center;
 }
 
 nav > a:visited {
@@ -23,27 +21,41 @@ a:hover {
     color: limegreen;
 }
 
-.main-section {
-    margin: 10px;
-    width: 95%;
-    height: 400px;
-    background-color: gray;
+.section-greeting {
+    height: 200px;
     text-align: center;
 }
 
-.section-greeting {
-    height: 200px;
-    margin: 10px;
-    width: 95%;
+.section-greeting, .section-projects {
     background-color: gray;
+}
+
+.section-bio, .section-contact {
+    background-color: whitesmoke;
+}
+
+.hero {
+    height: 700px;
+}
+
+.hero-header {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .section-contact {
     height: 100px;
-    margin: 10px;
-    width: 95%;
-    background-color: gray;
+    text-align: center;
 }
 
 header {
