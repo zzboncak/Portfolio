@@ -1,0 +1,71 @@
+nav {
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    width: 95%;
+    text-align: right;
+}
+
+nav > a:visited {
+    color: white;
+}
+
+nav > a:active {
+    color: white;
+}
+
+a:hover {
+    color: limegreen;
+}
+
+.main-section {
+    margin: 10px;
+    width: 95%;
+    height: 400px;
+    background-color: gray;
+    text-align: center;
+}
+
+.section-greeting {
+    height: 200px;
+    margin: 10px;
+    width: 95%;
+    background-color: gray;
+    text-align: center;
+}
+
+.section-contact {
+    height: 100px;
+    margin: 10px;
+    width: 95%;
+    background-color: gray;
+}
+
+header {
+    font-size: 16pt;
+    vertical-align: middle;
+}
+
+.bio-content {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.project > * {
+    display: inline-block;
+    text-align: left;
+}
+
+.image-left {
+    width: 40%;
+    /*float: left;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image-right {
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
