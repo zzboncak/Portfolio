@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zachary Zboncak Portfolio</title>
+    <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" rel="stylesheet">
     <link href="main.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karma|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <section role="article" class="hero section-greeting">
-        <header class="hero-header">Hello World! My Name is... Zachary Zboncak</header>
+    <section role="article" class="hero section-hero">
+        <h1 class="hero-header">Hello World! My Name is... <br>Zachary Zboncak</h1>
     </section>
 
     <!--<nav role="navigation" class="navigation">
@@ -21,38 +22,55 @@
     </nav>-->
 
     <section role="article" id="bio" class="main-section section-bio">
-        <header class="header">Bio</header>
-        <section class="bio-content">
-            <p>Hi, I’m Zack Zboncak (zuh-bon-sack) and I am a web developer who loves Javascript.</p>
+        <h2 class="header">About Me</h2>
+        <section class="bio-inline bio-content">
+            <p>Hi, I’m Zack Zboncak (zuh-bon-sack) and I am a web developer who loves Javascript.</p><br>
             <p>I am a web developer and a recent graduate of Thinkful’s Engineering Nights and Weekends program. 
                 I’ve always had a love for technology and solving problems. 
                 Nothing is more satisfying than taking an idea in your head, implementing it in code, and watching it successfully work. 
                 While you’ll primarily find Apple products in my home, I love gadgets of any kind, 
-                toying with them, and making life easier with them (hey Alexa, set the thermostat to 70).</p>
+                toying with them, and making life easier with them (hey Alexa, set the thermostat to 70).</p><br>
             <p>When I’m not coding, I’m generally spending time with my wife and 3 very energetic young boys, 
                 from whom I’m often inspired to create new projects (see my basic math practice app). 
                 We love camping, nature walks, family movie nights. As a person, I love a good book, a good craft beer, 
-                and spending time with the people who mean the most to me.</p>
-            <p>Fun fact: If I really like a movie or book, I tend to buy multiple copies (for reasons unbeknownst to me or my wife).</p>
+                and spending time with the people who mean the most to me.</p><br>
+            <p>Fun fact: If I really like a movie or book, I tend to buy multiple copies (for reasons unbeknownst to me or my wife).</p><br>
          </section>
+         <img src="Images/Zboncak Family Photo.jpeg" class="bio-inline bio-picture-float">
     </section>
 
     <section role="article" id="projects" class="main-section section-projects">
-        <header class="header">Projects</header>
-        <section class="project">
-            <img src="Images/Star Wars Quiz Screenshot.png" class="image-left">
-            <p class="description description-right">This quiz tests your knowledge on Star Wars (from the prequels to the originals to the sequels) 
-                by pulling randomly from a pool of questions.</p>
+        <h2 class="header">Projects</h2>
+        <section class="project-1">
+            <div class="container-picture">
+                <h3>Star Wars Quiz</h3>
+                <img src="Images/Star Wars Quiz Screenshot.png" class="image-left">
+            </div>
+            <div class="container-text">
+                <p class="description description-right flex-top">This quiz tests your knowledge on Star Wars (from the prequels to the originals to the sequels) by pulling randomly from a pool of questions.</p>
+                <div class="container-3-right flex-bottom">
+                    <button type="button" onclick="window.location.href = 'https://zzboncak.github.io/Star-Wars-Quiz-App/';">Live Version</button>
+                    <button type="button" onclick="window.location.href = 'https://github.com/zzboncak/Star-Wars-Quiz-App';">GitHub Repo</button>
+                </div>
+            </div>
         </section>
-        <section class="project">
-            <p class="description description-left">This project was inspired by my 4 year old son who wanted to start learning math. 
-                It randomly generates two numbers to add and evaluates if the user’s input is the correct answer.</p>
-            <img src="Images/Math Website.png" class="image-right">
+        <section class="project-2">
+            <div class="container-text">
+                <p class="description description-left flex-top">This project was inspired by my 4 year old son who wanted to start learning math. It randomly generates two numbers to add and evaluates if the user’s input is the correct answer.</p>
+                <div class="container-3-right flex-bottom">
+                        <button type="button">Live Version</button>
+                        <button type="button">GitHub Repo</button>
+                </div>
+            </div>
+            <div class="container-picture">    
+                <h3>Math for Toddlers</h3>
+                <img src="Images/Math Website.png" class="image-right">
+            </div>
         </section>
     </section>
 
     <section role="article" id="contact" class="section-contact">
-        <header class="header">Contact</header>
+        <h2 class="header">Contact</h2>
         <a href="mailto:zachary.zboncak@gmail.com">zachary.zboncak@gmail.com</a>
         <a href="https://github.com/zzboncak" target="_blank">Github</a>
         <a href="https://www.linkedin.com/in/zachary-zboncak-21801464/" target="_blank">Linked In</a>

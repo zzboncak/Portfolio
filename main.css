@@ -1,5 +1,33 @@
 * {
-    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+  }
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+h1, h2, h3 {
+    font-family: 'Karma', serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: left;
 }
 
 nav {
@@ -21,28 +49,30 @@ a:hover {
     color: limegreen;
 }
 
-.section-greeting {
-    height: 200px;
-    text-align: center;
-}
-
-.section-greeting, .section-projects {
-    background-color: gray;
-}
-
-.section-bio, .section-contact {
-    background-color: whitesmoke;
-}
-
-.hero {
+.section-hero {
+    background-color: #d9eeec;
     height: 700px;
+}
+
+.section-bio {
+    background-color: #64b2cd;
+}
+
+.section-projects {
+    background-color: #3c70a4;
+}
+
+.section-contact {
+    height: 100px;
+    background-color: #d9eeec;
+    text-align: center;
 }
 
 .hero-header {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 300px;
+    padding-top: 260px;
 }
 
 .header {
@@ -51,35 +81,39 @@ a:hover {
     padding-bottom: 20px;
 }
 
-.section-contact {
-    height: 100px;
-    text-align: center;
-}
-
-header {
-    font-size: 16pt;
-    vertical-align: middle;
-}
-
 .bio-content {
     text-align: left;
     padding-left: 15px;
 }
 
-.project {
+.bio-inline {
+    display: inline-block;
+    width: 49%;
+}
+
+
+.project-1, .project-2 {
     display: flex;
 }
 
-.image-left {
+.container-picture {
     width: 40%;
-    flex-direction: left;
+}
+
+.container-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-left {
+    width: 95%;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .image-right {
-    width: 40%;
-    flex-direction: right;
+    width: 95%;
     padding-left: 10px;
     padding-right: 10px;
 }
