@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 
-p, a {
+p, a, button {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 35px;
@@ -31,6 +31,18 @@ h3 {
     padding-left: 10px;
 }
 
+button {
+    border-radius: 5px;
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+button:hover {
+    background-color: #da9833;
+}
+
+/* currently not using
 nav {
     height: 40px;
     background-color: black;
@@ -44,7 +56,7 @@ nav > a:visited {
 
 nav > a:active {
     color: white;
-}
+}*/
 
 a:hover {
     color: limegreen;
@@ -87,24 +99,8 @@ a:hover {
     padding-left: 15px;
 }
 
-.bio-inline {
-    display: inline-block;
-    width: 49%;
-}
-
-
-.project-1, .project-2 {
-    display: flex;
-}
-
-.container-picture {
-    width: 40%;
-}
-
-.container-text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+.bio-picture {
+    width: 95%;
 }
 
 .image-left {
@@ -121,4 +117,32 @@ a:hover {
 
 .description {
     text-align: left;
+}
+
+@media screen and (min-width: 860px) {
+    .bio-inline {
+        display: inline-block;
+        width: 49%;
+    }
+    
+    .project-1, .project-2 {
+        display: flex;
+    }
+
+    .container-picture {
+        width: 40%;
+    }
+    
+    .container-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-3-right {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
