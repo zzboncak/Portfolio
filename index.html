@@ -8,6 +8,7 @@
     <link href="reset.css" type="text/css" rel="stylesheet">
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karma|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -23,57 +24,64 @@
 
     <section role="article" id="bio" class="main-section section-bio">
         <h2 class="header">About Me</h2>
-        <img src="Images/Zack Zboncak.jpeg" class="bio-inline bio-picture">
-        <section class="bio-inline bio-content">
-            <p>Hi, I’m Zack Zboncak (zuh-bon-sack) and I am a web developer, and yes, I spell my name with a K when shortened.</p><br>
-            <p>I am a web developer and a recent graduate of Thinkful’s Engineering Nights and Weekends program. 
-                I’ve always had a love for technology and solving problems. 
-                Nothing is more satisfying than taking an idea in your head, implementing it in code, and watching it successfully work. 
-                While you’ll primarily find Apple products in my home, I love gadgets of any kind, 
-                toying with them, and making life easier with them (hey Alexa, set the thermostat to 70).</p><br>
-            <p>When I’m not coding, I’m generally spending time with my wife and 3 very energetic young boys, 
-                from whom I’m often inspired to create new projects (see my basic math practice app). 
-                We love camping, nature walks, family movie nights. As a person, I love a good book, a good craft beer, 
-                and spending time with the people who mean the most to me.</p><br>
-            <p>Fun fact: If I really like a movie or book, I tend to buy multiple copies (for reasons unbeknownst to me or my wife).</p><br>
-         </section>
+        <div class="bio-content">
+            <img src="Images/Zack Zboncak.jpeg" class="bio-inline bio-picture">
+            <section class="bio-inline bio-words">
+                <p>Hi, I’m Zack Zboncak (zuh-bon-sack), and yes, I spell my name with a "K" when shortened.</p>
+                <p>I am a web developer and a recent graduate of Thinkful’s Engineering Nights and Weekends program. 
+                    I’ve always had a love for technology and solving problems. 
+                    Nothing is more satisfying than taking an idea in your head, implementing it in code, and watching it successfully work. 
+                    While you’ll primarily find Apple products in my home, I love gadgets of any kind, 
+                    toying with them, and making life easier with them (hey Alexa, set the thermostat to 70).</p>
+                <p>When I’m not coding, I’m generally spending time with my wife and 3 very energetic young boys, 
+                    from whom I’m often inspired to create new projects (see my basic math practice app). 
+                    We love camping, nature walks, family movie nights. As a person, I love a good book, a good craft beer, 
+                    and spending time with the people who mean the most to me.</p>
+                <p>Fun fact: If I really like a movie or book, I tend to buy multiple copies (for reasons unbeknownst to me or my wife).</p>
+            </section>
+        </div>
     </section>
 
     <section role="article" id="projects" class="main-section section-projects">
         <h2 class="header">Projects</h2>
-        <section class="project-1">
-            <div class="container-picture">
-                <h3>Star Wars Quiz</h3>
-                <img src="Images/Star Wars Quiz Screenshot.png" class="image-left">
-            </div>
-            <div class="container-text">
-                <p class="description description-right flex-top">This quiz tests your knowledge on Star Wars (from the prequels to the originals to the sequels) by pulling randomly from a pool of questions.</p>
-                <div class="container-3-right flex-bottom">
-                    <button type="button" onclick="window.location.href = 'https://zzboncak.github.io/Star-Wars-Quiz-App/';">Live Version</button>
-                    <button type="button" onclick="window.location.href = 'https://github.com/zzboncak/Star-Wars-Quiz-App';">GitHub Repo</button>
+        
+        <section class="project">
+            <h3>Star Wars Quiz</h3>
+            <div class="project-left">
+                <img src="Images/Star Wars Quiz Screenshot.png" class="project-image">
+                <div class="container-text">
+                    <p class="description description-right flex-top">This quiz tests your knowledge of Star Wars (from the prequels to the originals to the sequels) by pulling randomly from a pool of questions.</p>
+                    <div class="container-buttons flex-bottom">
+                        <button type="button" onclick="window.location.href = 'https://zzboncak.github.io/Star-Wars-Quiz-App/';">Live Version</button>
+                        <button type="button" onclick="window.location.href = 'https://github.com/zzboncak/Star-Wars-Quiz-App';">GitHub Repo</button>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="project-2">
-            <div class="container-text">
-                <p class="description description-left flex-top">This project was inspired by my 4 year old son who wanted to start learning math. It randomly generates two numbers to add and evaluates if the user’s input is the correct answer.</p>
-                <div class="container-3-right flex-bottom">
-                        <button type="button">Live Version</button>
-                        <button type="button">GitHub Repo</button>
+
+        <section class="project">
+            <h3>Math for Toddlers</h3>
+            <div class="project-right">
+                <img src="Images/Math Website.png" class="project-image">
+                <div class="container-text">
+                    <p class="description description-left flex-top">This project was inspired by my 4 year-old son who wanted to start learning math. It randomly generates two numbers to add and evaluates if the user’s input is the correct answer.</p>
+                    <div class="container-buttons flex-bottom">
+                            <button type="button" onclick="window.location.href = 'https://zzboncak.github.io/Judah-Math-Website/';">Live Version</button>
+                            <button type="button" onclick="window.location.href = 'https://github.com/zzboncak/Judah-Math-Website';">GitHub Repo</button>
+                    </div>
                 </div>
             </div>
-            <div class="container-picture">    
-                <h3>Math for Toddlers</h3>
-                <img src="Images/Math Website.png" class="image-right">
-            </div>
         </section>
+
     </section>
 
     <section role="article" id="contact" class="section-contact">
         <h2 class="header">Contact</h2>
-        <a href="mailto:zachary.zboncak@gmail.com">zachary.zboncak@gmail.com</a>
-        <a href="https://github.com/zzboncak" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/zachary-zboncak-21801464/" target="_blank">Linked In</a>
+        <div class="contact-content">
+            <a href="mailto:zachary.zboncak@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+            <a href="https://github.com/zzboncak" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/zachary-zboncak-21801464/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+        </div>
     </section>
 
 </body>

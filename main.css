@@ -2,13 +2,13 @@
     box-sizing: border-box;
   }
 
-p, a, button {
+p, a, button, h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 35px;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Karma', serif;
 }
 
@@ -22,13 +22,13 @@ h1 {
 
 h2 {
     font-size: 36px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 h3 {
     font-size: 24px;
-    text-align: left;
-    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 button {
@@ -59,7 +59,7 @@ nav > a:active {
 }*/
 
 a:hover {
-    color: limegreen;
+    color: #da9833;
 }
 
 .section-hero {
@@ -71,14 +71,40 @@ a:hover {
     background-color: #64b2cd;
 }
 
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-projects {
     background-color: #3c70a4;
+    padding: 35px;
+    color: #f4f4f4;
+}
+
+.project {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-projects, .container-picture, .container-text, .project-left, .project-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .section-contact {
-    height: 100px;
     background-color: #d9eeec;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .hero-header {
@@ -94,55 +120,76 @@ a:hover {
     padding-bottom: 20px;
 }
 
-.bio-content {
+.bio-words > p {
     text-align: left;
-    padding-left: 15px;
+    padding: 25px 25px 25px 25px;
 }
 
 .bio-picture {
-    width: 95%;
+    transform: rotate(90deg);
+    width: 50%;
+    margin: 20px 20px 20px 20px;
 }
 
-.image-left {
-    width: 95%;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.image-right {
-    width: 95%;
-    padding-left: 10px;
-    padding-right: 10px;
+.project-image {
+    width: 100%;
+    border-radius: 3px;
 }
 
 .description {
     text-align: left;
 }
 
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-buttons {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media screen and (min-width: 860px) {
-    .bio-inline {
-        display: inline-block;
-        width: 49%;
+    .bio-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
-    .project-1, .project-2 {
-        display: flex;
+    .project-image {
+        border-radius: 3px;
     }
 
-    .container-picture {
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-right {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .project-image {
         width: 40%;
     }
     
     .container-text {
-        width: 50%;
         display: flex;
         flex-direction: column;
     }
-    
-    .container-3-right {
-        padding-top: 50px;
-        display: flex;
-        justify-content: space-evenly;
-    }
 
+    .description {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
