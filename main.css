@@ -63,10 +63,15 @@ nav > a:active {
     color: white;
 }*/
 
-a:hover {
+a:hover, .fas:hover {
     color: #da9833;
     cursor: pointer;
 }
+
+.container-buttons > a:active, .container-buttons > a:visited {
+    color: white;
+}
+
 
 .section-hero {
     background-color: #d9eeec;
