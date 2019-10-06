@@ -44,6 +44,7 @@ button {
 
 button:hover {
     background-color: #da9833;
+    cursor: pointer;
 }
 
 /* currently not using
@@ -64,6 +65,7 @@ nav > a:active {
 
 a:hover {
     color: #da9833;
+    cursor: pointer;
 }
 
 .section-hero {
@@ -159,6 +161,7 @@ a:hover {
 .skills {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     align-items: center;
     margin-top: 40px;
 }
