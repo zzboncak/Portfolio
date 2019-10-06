@@ -132,8 +132,7 @@ a:hover {
 }
 
 .bio-picture {
-    transform: rotate(90deg);
-    width: 40%;
+    width: 95%;
     margin: 20px 20px 20px 20px;
 }
 
@@ -177,6 +176,11 @@ a:hover {
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    .bio-picture {
+        width: 45%;
+        margin: 20px 20px 20px 20px;
     }
     
     .project-image {
