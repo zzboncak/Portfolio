@@ -78,16 +78,11 @@ a:hover, .fas:hover {
 
 .parent {
     position: relative;
-    display: inline-block;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .popup {
-    width: 160px;
+    width: 190px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -97,7 +92,7 @@ a:hover, .fas:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -95px;
 }
 
 .section-hero {
