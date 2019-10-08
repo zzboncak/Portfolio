@@ -102,6 +102,8 @@ a:hover, .fas:hover {
 
 .section-bio {
     background-color: #64b2cd;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .bio-content {
@@ -156,6 +158,7 @@ a:hover, .fas:hover {
 .bio-words > p {
     text-align: left;
     padding: 25px 25px 0 25px;
+    max-width: 600px;
 }
 
 .bio-picture {
