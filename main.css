@@ -134,6 +134,10 @@ a:hover, .fas:hover {
     text-align: left;
 }
 
+.italics {
+    font-style: italic;
+}
+
 .contact-content {
     display: flex;
     flex-direction: row;
